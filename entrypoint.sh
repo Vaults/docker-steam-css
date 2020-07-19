@@ -8,4 +8,4 @@ if [ "$1" == "update" ]; then
 fi
 
 cd css
-sleep 10s && ./srcds_run -game cstrike -condebug +exec server.cfg +map surf_graphia
+./srcds_run -game cstrike -condebug -debug -dev +exec server.cfg +map surf_graphia
