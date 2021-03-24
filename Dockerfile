@@ -1,7 +1,7 @@
-FROM ubuntu:xenial
+FROM alpine:latest
 
 RUN apt-get update && \
-    apt-get install -y wget lib32gcc1 lib32tinfo5 unzip nginx
+    apt-get install -y wget lib32gcc1 lib32tinfo5 unzip
 
 RUN useradd -ms /bin/bash steam
 WORKDIR /home/steam
